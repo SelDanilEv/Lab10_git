@@ -32,5 +32,5 @@ namespace In
 		unsigned char* text;
 		int code[256];
 	};
-	IN getin(wchar_t infile[]);
+	IN getin(wchar_t infile[]);//проверка для миши
 }
