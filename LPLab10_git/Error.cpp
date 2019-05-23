@@ -31,7 +31,7 @@ namespace Error
 	};
 	ERROR geterror(int id)
 	{
-
+		// проверка гита
 	}
 	ERROR geterror(int id, int line = -1, int col = -1)
 	{
