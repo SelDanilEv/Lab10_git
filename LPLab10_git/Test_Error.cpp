@@ -22,8 +22,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	catch (Error::ERROR e)
 	{
 		std::cout << "Ошибка " << e.id << ":" << e.message
-			<< ", строка " << e.index.line
-			<< ",позиция " << e.index.col << std::endl << std::endl;
+			<< ", строка " << e.inext.line
+			<< ",позиция " << e.inext.col << std::endl << std::endl;
 	};
 
 	system("pause");

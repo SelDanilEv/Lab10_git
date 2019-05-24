@@ -143,6 +143,7 @@
   <ItemGroup>
     <ClInclude Include="Error.h" />
     <ClInclude Include="In.h" />
+    <ClInclude Include="Log.h" />
     <ClInclude Include="Parm.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
