@@ -15,6 +15,5 @@ namespace Parm				//обработка входных параметров
 		wchar_t log[PARM_MAX_SIZE];		//-log:	имя файла протокола
 	};
 
-	//int _tmain(int argc, _TCHAR* argv[])
 	PARM getparm(int argc, _TCHAR* argv[]);	//сформировать struct PARM на основе парметров функции main
 }

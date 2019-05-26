@@ -15,7 +15,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	try
 	{
 		Parm::PARM parm = Parm::getparm(argc, argv);
-		std::wcout << "-in:" << parm.in << ", -out" << parm.out << ", -log" << std::endl << std::endl;
+		std::wcout << "-in:" << parm.in << ", -out" << parm.out << ", -log" << parm.log <<std::endl << std::endl;
 	}
 	catch (Error::ERROR e)
 	{

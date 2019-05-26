@@ -2,6 +2,7 @@
 #include <fstream>
 #include "In.h"
 #include "Parm.h"
+#include "Error.h"
 namespace Log //работа с протоколом
 {
 	struct LOG //протокол

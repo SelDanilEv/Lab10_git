@@ -1,12 +1,13 @@
 #include "stdafx.h"
 #include "Error.h"
+#include <cstring>
 namespace Error
 {
 	/*Серии ошибок   0-99		 системные ошибки САНЯ
 					 100-109	 ошибки параметров
 					 110-119	 ошибки открытия и чтения файлов
 	*/
-	ERROR errors[EROOR_MAX_ENTRY] =  //таблица ошибок
+	ERROR errors[ERROR_MAX_ENTRY] =  //таблица ошибок
 	{
 		ERROR_ENTRY(0,"Недопустимый код ошибки"), //код ошибки вне диапазона 0 - ERROR_MAX_ENTRY
 		ERROR_ENTRY(1,"Системный сбой"),
@@ -29,12 +30,40 @@ namespace Error
 		ERROR_ENTRY_NODEF100(200),ERROR_ENTRY_NODEF100(300),ERROR_ENTRY_NODEF100(400),ERROR_ENTRY_NODEF100(500),
 		ERROR_ENTRY_NODEF100(600),ERROR_ENTRY_NODEF100(700),ERROR_ENTRY_NODEF100(800),ERROR_ENTRY_NODEF100(900),
 	};
-	ERROR geterror(int id)
-	{
-		// проверка гита
-	}
-	ERROR geterror(int id, int line = -1, int col = -1)
-	{
+	//ERROR geterror(int id)
+	//{
+	//	ERROR error_info ; // создаю структуру которую надо будет вернуть
+	//	if (id > 0 && id < ERROR_MAXSIZE_MESSAGE) // сравниваю диапазон
+	//	{
+	//		error_info.id = id; // заношу
+	//		strcpy(error_info.message, errors[id]);
+	//	}
+	//	else
+	//	{
+	//		error_info.id = 0; // заношу
+	//		strcpy(error_info.message, errors[0]);
+	//	}
+	//}
 
-	}
+	//ERROR geterrorin(int id, int line, int col)
+	//{
+	//	ERROR error_info; // создаю структуру которую надо будет вернуть
+	//	if (id > 0 && id < ERROR_MAXSIZE_MESSAGE) // сравниваю диапазон
+	//	{
+	//		error_info.id = id; // заношу
+	//		error_info.inext.col = col;
+	//		error_info.inext.line = line;
+	//		strcpy(error_info.message, errors[id]);
+	//		return error_info;
+	//	}
+	//	else
+	//	{
+	//		error_info.id = 0; // заношу
+	//		error_info.inext.col = -1;
+	//		error_info.inext.line = -1;
+	//		strcpy(error_info.message, errors[0].message);
+	//		return error_info;
+	//	}
+	//}
+	//;
 };
